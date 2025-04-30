@@ -1,33 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'; // Correct imports
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/home';
 import About from './pages/about';
 import Contact from './pages/contact';
 import Portfolio from './pages/portfolio';
+import './App.css';
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <nav>
-          <Link to="/home">Home</Link> | <Link to ="/portfolio">Portfolio</Link> | <Link to="/about">About</Link> | <Link to="/contact">Contact</Link>
-        </nav>
-
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
-
-        <header className="App-header">
-          <a href="https://reactjs.org">React Website</a>
-        </header>
       </div>
-    </BrowserRouter> // Removed the comment here
+    </BrowserRouter>
   );
 }
 
 export default App;
-
-

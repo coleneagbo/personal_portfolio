@@ -1,0 +1,131 @@
+body {
+    background-color: #f5ddc9;
+    font-family: Inria, serif;
+    color: #3a2d2a;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  padding: 1em 0;
+  margin: 0;
+  background-color: #f5ddc9;
+  font-size: 1.1em;
+  font-weight: normal;
+}
+
+nav ul li {
+  margin: 0 1.5em;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #5b3d3a;
+  transition: color 0.3s, transform 0.3s;
+
+}
+
+nav ul li a:hover {
+  color: #9c6b68;
+  transform: scale(1.1);
+}
+
+nav ul li .active {
+  font-style: italic;
+  font-weight: bold;
+  color: #7b5a58;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #6F4E37;
+    margin: 1em 3em;
+ }
+ 
+ 
+ .heading {
+    text-align: left;
+    margin-left: 2em;
+    font-size: 2.0em;
+    margin-top: 1em;
+    font-weight: normal;
+    margin-bottom: 1em;
+    font-stretch: condensed;
+    font-family: 'Courier New', Courier, monospace;
+     color: #6F4E37;
+ }
+ 
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: #e0c8b6;
+    padding: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width:1000px;
+}
+
+.socials a {
+    text-align: center;
+    margin-left:5px;
+    text-decoration: none;
+    color: #5b3d3a;
+    transition: transform 0.3s ease;
+      font-family: 'Courier New', Courier, monospace;
+
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+    filter: brightness(0) invert(1); /* white by default */
+    transition: filter 0.3s ease;    /* smooth color transition */
+}
+
+/* On hover, icons return to their original color */
+.socials a:hover .icon {
+    filter: none;
+}
+
+
+
+/* so we chilling on the phonr */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        font-size: 1em; /* slightly smaller nav text */
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 1em;
+    }
+
+    .socials {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .socials a p {
+        font-size: 0.9em;
+
+    }
+}
+

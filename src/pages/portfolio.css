@@ -1,0 +1,175 @@
+body {
+    background-color: #f5ddc9;
+    font-family: Inria, serif;
+    color: #3a2d2a;
+    margin: 0;
+    padding: 0;
+ }
+ 
+ 
+ nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  padding: 1em 0;
+  margin: 0;
+  background-color: #f5ddc9;
+  font-size: 1.1em;
+  font-weight: normal;
+  }
+ 
+ 
+ nav ul li {
+  margin: 0 1.5em;
+ }
+ 
+ 
+ nav ul li a {
+  text-decoration: none;
+  color: #5b3d3a;
+  transition: color 0.3s, transform 0.3s;
+ }
+ 
+ 
+ nav ul li a:hover {
+  color: #9c6b68;
+  transform: scale(1.1);
+ }
+ 
+ 
+ nav ul li .active {
+  font-style: italic;
+  font-weight: bold;
+  color: #7b5a58;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ .divider {
+    border: none;
+    border-top: 1px solid #6F4E37;
+    margin: 1em 3em;
+ }
+ 
+ 
+ .heading {
+    text-align: left;
+    margin-left: 2em;
+    font-size: 2.0em;
+    margin-top: 1em;
+    font-weight: normal;
+    margin-bottom: 1em;
+    font-stretch: condensed;
+    font-family: 'Courier New', Courier, monospace;
+     color: #6F4E37;
+ 
+ 
+ }
+ 
+ 
+ .projects {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    padding: 2em 3em;
+ }
+ 
+ 
+ .project {
+    background-color: #fff4ec;;
+    padding: 1.5em;
+    width: 420px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08);
+ border-radius:9px;
+ }
+ /* top 0, sides auto (center), bottom 1em
+ .project img {
+    width: 200px;
+    height: 280px;
+    object-fit: cover;
+    margin-bottom: 1em;
+    image-orientation: center;
+ }*/
+ 
+ 
+ 
+ 
+ .project img {
+    width: 200px;
+    height: 280px;
+    object-fit: cover;
+    margin: 0 auto 1em auto; /* top 0, sides auto (center), bottom 1em */
+    display: block; /* makes margin auto work */
+ }
+ 
+ 
+ .project h2 {
+    font-style: italic;
+    color: #e89eb8;
+    font-size: 1.2em;
+    text-align: center;
+ }
+ 
+ 
+ .project p {
+    font-size: 0.95em;
+    line-height: 1.5em;
+    font-weight: 400;
+    color: #6F4E37;
+ }
+ 
+ 
+ .flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 280px;
+  perspective: 1000px;
+  margin: 0 auto 1em auto;
+ }
+ 
+ 
+ .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+ }
+ 
+ 
+ .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+ }
+ 
+ 
+ .flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+ }
+ 
+ 
+ .flip-card-front img,
+ .flip-card-back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 6px;
+ }
+ 
+ 
+ .flip-card-back {
+  transform: rotateY(180deg);
+ }
+ 
+ 
+ 
+ 
+ 
+ 

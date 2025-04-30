@@ -1,0 +1,126 @@
+body {
+  background-color: #d7e8eb;
+  font-family: 'Inria', serif;
+  color: #3a2d2a;
+  margin: 0;
+  padding: 0;
+}
+
+/* width covers whole page 
+.home-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1.5em;
+}
+  */
+
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  padding: 1em 0;
+  margin: 0;
+  background-color: #f5ddc9;
+  font-size: 1.1em;
+  font-weight: normal;
+  }
+ 
+ 
+ nav ul li {
+  margin: 0 1.5em;
+ }
+ 
+ 
+ nav ul li a {
+  text-decoration: none;
+  color: #5b3d3a;
+  transition: color 0.3s, transform 0.3s;
+ }
+ 
+ 
+ nav ul li a:hover {
+  color: #9c6b68;
+  transform: scale(1.1);
+ }
+ 
+ 
+ nav ul li .active {
+  font-style: italic;
+  font-weight: bold;
+  color: #7b5a58;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+ }
+ 
+
+.divider {
+  border: none;
+  border-top: 1px solid #6F4E37;
+  margin: 1em 3em;
+}
+
+
+.heading {
+  text-align: left;
+  font-size: 2.0em;
+  margin-top: 1em;
+  margin-left: 2em;
+  font-weight: normal;
+  margin-bottom: 1em;
+  font-stretch: condensed;
+  font-family: 'Courier New', Courier, monospace;
+   color: #6F4E37;
+
+
+}
+
+.intro-section {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 2em;
+  position: relative;
+  margin-left:3em;
+  margin-right: auto;
+}
+
+.bear-img {
+  width: 280px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+}
+
+.intro-card {
+  position: relative;
+  top: 30px;
+  left: -60px;
+  background-color: #fff4ec;
+  padding: 2em;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  min-width: 260px;
+  min-height: 320px;
+  z-index: 1;
+}
+
+.intro-card h1 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #DB7093;
+  font-style: italic;
+  margin-bottom: 0.5em;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+.intro-card p {
+  font-size: 1.3em;
+  color: #7b5a58;
+  font-style: italic;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.6rem;
+  margin-left: 90px;
+
+}
