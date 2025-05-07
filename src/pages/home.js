@@ -29,7 +29,7 @@ const Home = () => {
 
         <div className="intro-card">
           <h1>Hi, I'm Colene!</h1>
-          <p>☆ I'm a student developer and aspiring software engineer</p>
+          <p>☆ I'm a student developer and aspiring software engineer ☆</p>
         </div>
       </div>
     </div>
