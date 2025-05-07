@@ -172,4 +172,27 @@ body {
  
  
  
+ @media (max-width: 600px) {
+   nav ul {
+     flex-direction: column;
+     align-items: center;
+     font-size: 1em;
+   }
+ 
+   nav ul li {
+     margin-left: 0;
+     margin-bottom: 1em;
+   }
+ 
+   .projects {
+     flex-direction: column;
+     align-items: center; /* center the stacked cards */
+     padding: 1em;
+   }
+ 
+   .project {
+     width: 90%; /* make them responsive */
+     max-width: 400px;
+   }
+ }
  
