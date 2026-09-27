@@ -45,7 +45,7 @@ const Home = () => {
               <p className="section-label">✦ bulletin ✦</p>
               <h2>Hi, I'm Colene!</h2>
               <p>I'm a computer science student and aspiring software engineer. I love creating thoughtful, welcoming digital experiences and exploring how technology can help people.</p>
-              <p className="signature">thanks for stopping by ♡</p>
+              <p className="signature"> ♡</p>
             </article>
 
             <article className="profile-box">
