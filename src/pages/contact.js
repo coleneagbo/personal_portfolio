@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 
 export default function Contact() {
   return (
-    <div>
-      <nav>
+    <div className="contact-container">
+      <nav className="site-nav">
         <ul>
            <li><Link to="/home">HOME</Link></li>
                     <li><Link to="/portfolio">PORTFOLIO</Link></li>
@@ -14,11 +14,9 @@ export default function Contact() {
                     <li><Link to="/contact" className="active">CONTACT</Link></li>
         </ul>
       </nav>
-      <hr className="divider" />
-
-<h1 className="heading">⋆.𐙚 ̊ contact me ⋆.𐙚 ̊</h1>
-
-<hr className="divider" />
+      <header className="site-banner">
+        <h1>contact me</h1>
+      </header>
 
       <section className="socials">
         <a

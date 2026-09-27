@@ -116,9 +116,9 @@ const About = () => {
   ];
 
   return (
-    <div>
+    <div className="about-container">
       {/* Nav */}
-      <nav>
+      <nav className="site-nav">
         <ul>
         <li><Link to="/home">HOME</Link></li>
           <li><Link to="/portfolio">PORTFOLIO</Link></li>
@@ -127,11 +127,9 @@ const About = () => {
         </ul>
       </nav>
 
-      <hr className="divider" />
-
-<h1 className="heading">⋆.𐙚 ̊ more about me ⋆.𐙚 ̊</h1>
-
-<hr className="divider" />
+      <header className="site-banner">
+        <h1>about me</h1>
+      </header>
 
       {/* Flipbook */}
       <div className="book-container">
@@ -152,20 +150,7 @@ const About = () => {
         </div>
       </div>
 
-      {/* Bottom Section */}
-      <div className="bottom">
-        <img
-          src="https://res.cloudinary.com/db4ayioxs/image/upload/v1745992101/uploads/1745992100601-Screenshot%202025-04-29%20at%2010.42.38%C3%A2%C2%80%C2%AFPM.png.png"
-          alt="Résumé visual"
-        />
-        <a
-          href="https://docs.google.com/document/d/1FgU_FnMrKMmp0D-_OH_hEGx1RuvQjgze/edit?usp=drive_link&ouid=100367393158373898248&rtpof=true&sd=true"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <button className="resume">View my Resume</button>
-        </a>
-      </div>
+      
     </div>
   );
 };

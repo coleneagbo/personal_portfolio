@@ -5,6 +5,7 @@ import About from './pages/about';
 import Contact from './pages/contact';
 import Portfolio from './pages/portfolio';
 import './App.css';
+import './site-theme.css';
 
 function App() {
   return (
