@@ -119,6 +119,30 @@ body {
     text-align: left;
 
   }
+
+  .leadership-details {
+    margin-left: 1.5em;
+  }
+
+  .experience-heading {
+    margin-bottom: 0.5em;
+  }
+
+  .experience-details {
+    margin: 0 0 1em 1.2em;
+    padding-left: 1em;
+    color: #6F4E37;
+    font-size: 1.1em;
+    line-height: 1.45;
+    text-align: left;
+    list-style-position: outside;
+  }
+
+  .experience-details li {
+    margin-bottom: 0.7em;
+    padding-left: 0.2em;
+    text-align: left;
+  }
   
   .toc {
     list-style: none;

@@ -2,6 +2,33 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './portfolio.css';
 
+const projects = [
+  {
+    title: 'Survey: NLP for Ghanaian Languages',
+    tools: 'Natural Language Processing · Systematic Literature Review',
+    description: 'Co-authored a systematic review of Ghanaian-language NLP, synthesizing 36 studies from more than 17,000 publications. The review maps gaps in datasets, models, and evaluation, and proposes a research roadmap for the country’s 73 living indigenous languages.',
+    url: 'https://arxiv.org/html/2405.06818v2',
+    linkLabel: 'Read the paper',
+  },
+  {
+    title: 'CS 35L Project',
+    tools: 'React · Vite · Node.js · Express · JWT · PostgreSQL · Docker',
+    description: 'A full-stack project with a React and Vite frontend, a Node and Express backend, JWT authentication, and a PostgreSQL database, containerized with Docker.',
+    url: 'https://github.com/nigella-l/CS-35L-Project',
+    linkLabel: 'View on GitHub',
+  },
+  {
+    title: 'Kode with Klossy Instructional Project',
+    tools: 'Languages and tools coming soon',
+    description: 'A short description of this project will go here.',
+  },
+  {
+    title: 'NSBE Cyclotron',
+    tools: 'Languages and tools coming soon',
+    description: 'A short description of this project will go here.',
+  },
+];
+
 const Portfolio = () => {
   return (
     <div>
@@ -16,68 +43,32 @@ const Portfolio = () => {
 
       <hr className="divider" />
 
-      <h1 className="heading">⋆.𐙚 ̊what I’ve been working on ⋆.𐙚 ̊</h1>
+      <h1 className="heading">⋆.𐙚 ̊my work ⋆.𐙚 ̊</h1>
 
       <hr className="divider" />
 
-      <section className="projects">
-        <div className="project">
-          <div className="flip-card">
-            <div className="flip-card-inner">
-              <div className="flip-card-front">
-                <img
-                  src="https://i.pinimg.com/736x/42/36/8e/42368e3a496c16bde7dd7742bc55f93f.jpg"
-                  alt="Front"
-                />
-              </div>
-              <div className="flip-card-back">
-                <img
-                  src="https://res.cloudinary.com/db4ayioxs/image/upload/v1745990992/uploads/1745990990893-Screenshot%202025-04-29%20at%2010.26.37%C3%A2%C2%80%C2%AFPM.png.png"
-                  alt="Back"
-                />
-              </div>
+      <main className="projects">
+        {projects.map((project, index) => (
+          <article className="project" key={project.title}>
+            <div className="project-image" aria-label={`Placeholder for ${project.title}`}>
+              <span>✦</span>
+              <small>Project {index + 1}</small>
             </div>
-          </div>
-
-          <h2><em>NSBE PARTICLE ACCELERATOR</em></h2>
-          <p><strong>Languages Used:</strong><br />
-            &bull; Arduino C++<br />
-            &bull; Python
-          </p>
-          <p>
-            Developed a C++ Arduino program to measure voltage flowing through two points on a breadboard. Developed a Python program to measure and compare electromagnetic fields during the particle accelerator’s cycle.
-          </p>
-        </div>
-
-        <div className="project">
-          <div className="flip-card">
-            <div className="flip-card-inner">
-              <div className="flip-card-front">
-                <img
-                  src="https://i.pinimg.com/736x/48/0c/67/480c67fd231d8a60e3458faf605525c8.jpg"
-                  alt="Front"
-                />
-              </div>
-              <div className="flip-card-back">
-                <img
-                  src="https://res.cloudinary.com/db4ayioxs/image/upload/v1745992404/uploads/1745992403211-Screenshot%202025-04-29%20at%2010.38.46%C3%A2%C2%80%C2%AFPM.png.png"
-                  alt="Back"
-                />
-              </div>
+            <div className="project-content">
+              <h2>{project.title}</h2>
+              <p className="project-tools"><strong>Tools:</strong> {project.tools}</p>
+              <p>{project.description}</p>
+              {project.url ? (
+                <a className="project-link" href={project.url} target="_blank" rel="noopener noreferrer">
+                  {project.linkLabel}
+                </a>
+              ) : (
+                <span className="project-link">Details coming soon</span>
+              )}
             </div>
-          </div>
-
-          <h2><em>INTERNET OF THINGS WORD WRITING TOOL</em></h2>
-          <p><strong>Languages and Tools Used:</strong><br />
-            &bull; C++<br />
-            &bull; STM3 CUBE IDE<br />
-            &bull; IOT Platform Circuit Board
-          </p>
-          <p>
-            Developed a motion-based word writing tool using sensors to detect pen movement and transmit signals wirelessly for rendering on-screen.
-          </p>
-        </div>
-      </section>
+          </article>
+        ))}
+      </main>
     </div>
   );
 };

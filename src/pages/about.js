@@ -38,8 +38,8 @@ const About = () => {
         </div>
         <div className="page right">
           <h2>Welcome!</h2>
-          <p>My name is Colene and I am a first year CS major at the University of California Los Angeles. 
-          I hope to pursue a software/tech-related career. I'm still exploring, but I love Frontend Development and would love to work on accessibility technologies. Outside of tech, I love fashion and reading.</p>
+          <p>My name is Colene and I am a thrid year Computer Science major at the University of California Los Angeles. 
+           Outside of tech, I love fashion and reading.</p>
         </div>
       </>
     ),
@@ -49,13 +49,26 @@ const About = () => {
         <div className="page left">
           <h2>Leadership Experience</h2>
           <p><strong>National Society of Black Engineers at UCLA</strong></p>
-          <p><strong>Intern (2024-2025):</strong><br />Planned First Year Admit Weekend & shadowed exec.</p>
-          <p><strong>Secretary (2025-2026):</strong><br />Incoming position for the 2025–2026 school year.</p>
+          <div className="leadership-details">
+            <p><strong>* Internal Vice President (2026-2027)</strong></p>
+            <p><strong>* Secretary (2025-2026)</strong></p>
+          </div>
+          <p><strong>Association for Computing Machiner-Women</strong></p>
+          <div className="leadership-details">
+            <p><strong>* Marketing Chair (2026-2027)</strong></p>
+          </div>
         </div>
         <div className="page right">
-          <h2>---</h2>
-          <p><strong>Women in Engineering at UCLA Leadership Academy (2024-2025):</strong><br />
-          Participated in workshops, speaker panels, and created a final presentation.</p>
+          <h2>Further Work Experience</h2>
+          <p><strong>Kode With Klossy</strong><br />
+              <strong>Code-A-Bration Instructor Assistant</strong><br />
+          Taught web development and AI fundamentals to female students (ages 13–18), guiding groups to build image classification models using Google Teachable Machine.</p>
+
+             <p><strong>UCLA Samueli Materiel Services</strong><br />
+              <strong>Deans Office Operations and Administrative Assistant</strong><br />
+          Managed facility logistics, event setups, and front-desk operations while overseeing organizational procurement, invoicing, and expense tracking.</p>
+          
+          
         </div>
       </>
     ),
@@ -64,12 +77,20 @@ const About = () => {
       <>
         <div className="page left">
           <h2>Technical Experience</h2>
-          <p>See Projects and Resume.</p>
+          <p className="experience-heading">
+            <strong>Microsoft</strong><br />
+            <strong>Software Engineering + Product Management (Explore) Intern</strong><br />
+            June 2026 - September 2026 · Redmond, Washington
+          </p>
+          <ul className="experience-details">
+            <li>Authored a build deployment automation spec by interviewing 7 engineers, then designed a one-command, 3-stage Windows test pipeline across 2 synchronized environments.</li>
+            <li>Built a self-recovering orchestration service with artifact and health validation, then added 23 regression tests and 6 AI-assisted scenarios to prevent false-success results.</li>
+          </ul>
         </div>
         <div className="page right">
           <h2>Technical Skills</h2>
-          <p><strong>Languages:</strong> C++, Python, JavaScript, HTML/CSS, React.js</p>
-          <p><strong>Tools:</strong> Git, Figma</p>
+          <p><strong>Programming Languages:</strong> Python, C++, HTML, CSS, Javascript, MATLAB</p>
+          <p><strong>Tools and Frameworks:</strong> React.js, Node.js, Express.js, Git, Linux, Onshape CAD, Windows OS Scripting</p>
         </div>
       </>
     ),
@@ -78,17 +99,17 @@ const About = () => {
       <>
         <div className="page left">
           <h2>Education</h2>
-          <p><strong>University of California Los Angeles<br />BS Computer Science</strong></p>
-          <p><strong>Relevant Coursework:</strong><br />
-            Principles and Practices of Computing (Python), Introduction to C++, 
-            Data Structures & Algorithms, Calculus I–III, Physics Mechanics.</p>
+          <p><strong>University of California Los Angeles<br />BS Computer Science Expected 2028</strong></p>
+          <p><strong>Tech Breadth: Tech Management</strong></p>
+         <p><strong>Sci-Tech Focus Area: Computer Science</strong></p>
+          
         </div>
         <div className="page right">
           <h2>---</h2>
-          <p><strong>Awards and Honors:</strong></p>
-          <p>UCLA CEED Scholar<br />
-            NSBE Alumni Scholarship<br />
-            Qualcomm Scholar</p>
+         <p><strong>Relevant Coursework:</strong><br />
+            Principles and Practices of Computing (Python), Introduction to C++, Computer Organization, Operating Systems, Software Construction,
+            Data Structures & Algorithms, Logic Design of Digital Systems, Programming Languages, Human-Computer Interaction<br />
+            Calculus I–III, Physics Mechanics, Differntial Equations, Linear Algebra, Discrete Mathematics, Introduction to Probability</p>
         </div>
       </>
     ),
